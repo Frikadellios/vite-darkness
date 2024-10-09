@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import Button from './ui/button/Button.vue';
 defineProps<{
   msg: string
 }>()
@@ -8,10 +10,19 @@ defineProps<{
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
+      You've successfully created a project with
+      <Button variant="link"><a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite +</a></Button>
+      <Button variant="link"><a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a></Button>
+      <span>What's next?</span>
     </h3>
+    <Accordion type="single" collapsible>
+    <AccordionItem value="item-1">
+      <AccordionTrigger>Is it accessible?</AccordionTrigger>
+      <AccordionContent>
+        Yes. It adheres to the WAI-ARIA design pattern.
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
   </div>
 </template>
 
