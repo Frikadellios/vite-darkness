@@ -41,7 +41,7 @@
     "preview": "bunx --bun run build && bun wrangler pages dev ./dist",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
-    "build-only": "vite build",
+    "build-only": "bunx --bun vite build",
     "type-check": "vue-tsc --build --force",
     "deploy": "bun run build && wrangler pages deploy ./dist",
     "lint": "conc bun:lint:*",
