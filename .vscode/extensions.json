@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+      "biomejs.biome",
+      "Vue.volar",
+      "pandy.bun",
+      "oven.bun-vscode",
+      "editorconfig.editorconfig",
+      "unifiedjs.vscode-mdx",
+      "bradlc.vscode-tailwindcss",
+      "johnsoncodehk.volarjs-labs",
+      "csstools.postcss",
+      "davidanson.vscode-markdownlint",
+      "ms-playwright.playwright",
+      "vue.volar"
+  ]
+}
